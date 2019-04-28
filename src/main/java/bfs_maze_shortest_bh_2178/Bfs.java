@@ -36,7 +36,7 @@ public class Bfs {
 		N= Integer.parseInt(st.nextToken());
 		M= Integer.parseInt(st.nextToken());
 		
-		// ¹®Á¦ ¹è¿­ÀÛ¼º		
+		// ë¬¸ì œë°°ì—´ ì´ˆê¸°í™”	
 		question= new int[N+1][M+1];
 		char[] questionRow;
 		for(int n= 1; n <= N; n++) { 
@@ -47,10 +47,10 @@ public class Bfs {
 			}
 		}
 		
-		// ¹æ¹® ¹è¿­ ÃÊ±âÈ­
+		// ë°©ë¬¸ì •ë³´ ë°°ì—´ ì´ˆê¸°í™”
 		visited= new boolean[N+1][M+1];
 		
-		// Queue Á¤ÀÇ
+		// Queue ì´ˆê¸°í™”
 		Queue<Node> queue= new LinkedList<Node>();
 		
 		Node node= new Node(1, 1);
@@ -62,8 +62,9 @@ public class Bfs {
 		
 		while(!queue.isEmpty()) {
 			cnt= cnt+1;
+			int size = queue.size();
 			
-			for(int x= 0; x< queue.size(); x++) {
+			for(int x= 0; x< size; x++) {
 
 				currentNode= queue.poll();
 				
