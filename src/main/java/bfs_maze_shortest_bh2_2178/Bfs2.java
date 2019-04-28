@@ -3,6 +3,21 @@ package bfs_maze_shortest_bh2_2178;
 import java.io.FileInputStream;
 import java.util.*;
  
+//Input
+/*
+7 7
+1011111
+1110001
+1000001
+1000001
+1000001
+1000001
+1111111
+*/
+		
+//output
+//13
+
 public class Bfs2 {
  
     static int[][] question;

@@ -5,7 +5,22 @@ import java.io.InputStreamReader;
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.StringTokenizer;
- 
+
+//Input
+/*
+7 7
+1011111
+1110001
+1000001
+1000001
+1000001
+1000001
+1111111
+*/
+		
+//output
+//13
+
 public class Bfs3 {
  
     static int[][] question;
